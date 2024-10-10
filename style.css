@@ -57,10 +57,52 @@ a:hover {
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-700px);
 
+
+  }
+  to {
+    transform: translateX(0);
+  }
+  
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(700px);
+
+
+  }
+  to {
+    transform: translateX(0);
+  }
+} 
+.logo
+{
+  animation-name: slideInLeft;
+  animation-duration: 5s;
+  animation-timing-function: slideInLeft;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: slideInLeft;
+  animation-fill-mode: slideInLeft;
+
+}
 .logo {
   font-size: 2rem;
 }
+.section__text{
+  animation-name: slideInRight;
+  animation-duration: 5s;
+  animation-timing-function: slideInRight;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: slideInRight;
+  animation-fill-mode: slideInRight;
+
+}
+
 
 .logo:hover {
   cursor: default;
